@@ -1,5 +1,5 @@
-import {defineStore} from 'pinia'
-import axios from "axios";
+import axios from 'axios'
+import { defineStore } from 'pinia'
 
 export const useUserStore = defineStore('user', {
     state: () => ({
@@ -12,7 +12,6 @@ export const useUserStore = defineStore('user', {
         image: null,
         description: null,
     }),
-
     actions: {
         setUserDetails(res) {
             console.log('setUserDetails', res.data)
@@ -32,16 +31,12 @@ export const useUserStore = defineStore('user', {
             this.$state.firstName = res.data.user.first_name
             this.$state.lastName = res.data.user.last_name
             this.$state.location = res.data.user.location
-            this.$state.image = res.data.user.image
             this.$state.description = res.data.user.description
-
             if (res.data.user.image) {
                 this.$state.image = process.env.VUE_APP_API_URL + 'images/users/' + res.data.user.image
-                //(http://127.0.0.1:8000/images/users/1687181679.jpg)
             } else {
                 this.$state.image = process.env.VUE_APP_URL + 'DefaultUserAvatar.png'
             }
-
         },
 
         userImage(image) {
@@ -59,9 +54,5 @@ export const useUserStore = defineStore('user', {
             this.$state.description = null
         }
     },
-
     persist: true
 })
-
-
-
