@@ -7,13 +7,13 @@
           <h1 class="mb-6 text-lg text-gray-100 font-thin">Let's get rocking!</h1>
 
           <div class="mb-4">
-            <TextInput label="Email" :labelColor="false" placeholder="john.doe@m.com" v-model:input="email"
+            <TextInput label="Email" :labelColor="false" placeholder="Enter your email" v-model:input="email"
                        inputType="text" :error="errors.email ? errors.email[0] : ''"
             />
           </div>
 
           <div class="mb-4">
-            <TextInput label="Password" :labelColor="false" placeholder="password123?" v-model:input="password"
+            <TextInput label="Password" :labelColor="false" placeholder="Enter your password123?" v-model:input="password"
                        inputType="password" :error="errors.email ? errors.email[0] : ''"
             />
           </div>

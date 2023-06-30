@@ -16,13 +16,13 @@
 
     <div class="flex flex-wrap mt-4 mb-6">
       <div class="w-full md:w-1/2 px-3">
-        <TextInput label="Title" placeholder="Awesome Concert" v-model:input="title"
+        <TextInput label="Title" placeholder="Title" v-model:input="title"
                    inputType="text"
                    :error="errors.title ? errors.title[0] : ''"
         />
       </div>
       <div class="w-full md:w-1/2 px-3">
-        <TextInput label="Location" placeholder="HN, VN" v-model:input="location"
+        <TextInput label="Location" placeholder="Location" v-model:input="location"
                    inputType="text"
                    :error="errors.location ? errors.location[0] : ''"
         />

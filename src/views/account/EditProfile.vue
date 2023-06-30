@@ -16,7 +16,7 @@
       <div class="w-full md:w-1/2 px-3">
         <TextInput
             label="First Name"
-            placeholder="John"
+            placeholder="Enter your first name"
             v-model:input="firstName"
             inputType="text"
             :error="errors.first_name ? errors.first_name[0] : ''"
@@ -25,7 +25,7 @@
       <div class="w-full md:w-1/2 px-3">
         <TextInput
             label="Last Name"
-            placeholder="Doe"
+            placeholder="Enter your last name"
             v-model:input="lastName"
             inputType="text"
             :error="errors.last_name ? errors.last_name[0] : ''"
@@ -37,7 +37,7 @@
       <div class="w-full md:w-1/2 px-3">
         <TextInput
             label="Location"
-            placeholder="Madrid, ES"
+            placeholder="Enter your location"
             v-model:input="location"
             inputType="text"
         />

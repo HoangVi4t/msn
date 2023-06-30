@@ -7,27 +7,27 @@
           <h1 class="mb-6 text-lg text-gray-100 font-thin">Let's get rocking!</h1>
 
           <div class="mb-4">
-            <TextInput label="First Name" :labelColor="false" placeholder="John" v-model:input="firstName"
+            <TextInput label="First Name" :labelColor="false" placeholder="Enter your first name" v-model:input="firstName"
                        inputType="text" :error="errors.first_name ? errors.first_name[0] : ''"/>
           </div>
 
           <div class="mb-4">
-            <TextInput label="Last Name" :labelColor="false" placeholder="Doe" v-model:input="lastName" inputType="text"
+            <TextInput label="Last Name" :labelColor="false" placeholder="Enter your last name" v-model:input="lastName" inputType="text"
                        :error="errors.last_name ? errors.last_name[0] : ''"/>
           </div>
 
           <div class="mb-4">
-            <TextInput label="Email" :labelColor="false" placeholder="john.doe@m.com" v-model:input="email"
+            <TextInput label="Email" :labelColor="false" placeholder="Enter your email" v-model:input="email"
                        inputType="text" :error="errors.email ? errors.email[0] : ''"/>
           </div>
 
           <div class="mb-4">
-            <TextInput label="Password" :labelColor="false" placeholder="password123?" v-model:input="password"
+            <TextInput label="Password" :labelColor="false" placeholder="Enter your password?" v-model:input="password"
                        inputType="password" :error="errors.password ? errors.password[0] : ''"/>
           </div>
 
           <div class="mb-4">
-            <TextInput label="Confirm Password" :labelColor="false" placeholder="password123?"
+            <TextInput label="Confirm Password" :labelColor="false" placeholder="password?"
                        v-model:input="confirmPassword" inputType="password"/>
           </div>
 
