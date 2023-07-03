@@ -38,7 +38,7 @@
               </router-link>
             </div>
             <p class="py-2">Location: {{ post.location }}</p>
-            <p class="text-gray-darker text-md">
+            <p class="text-gray-darker text-md break-word truncate">
               {{ post.description }}
             </p>
             <div v-if="userStore.id == route.params.id" class="mt-2 flex items-center justify-end">
@@ -85,12 +85,12 @@
 
 <script setup>
 import RouterLinkButton from '../../global/RouterLinkButton.vue'
-import { usePostStore } from '@/store/post-store'
-import { useUserStore } from '@/store/user-store'
-import { useRoute } from 'vue-router'
+import {usePostStore} from '@/store/post-store'
+import {useUserStore} from '@/store/user-store'
+import {useRoute} from 'vue-router'
 import Swal from 'sweetalert2'
 import axios from 'axios'
-import { onMounted } from 'vue'
+import {onMounted} from 'vue'
 
 const route = useRoute()
 const postStore = usePostStore()
