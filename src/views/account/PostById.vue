@@ -20,7 +20,7 @@
         <div class="p-4">
           <p class="text-3xl font-bold hover:text-gray-700 pb-4">{{ post.title }}</p>
           <p class="py-2">Event Location: {{ post.location }}</p>
-          <p class="pb-6 break-word truncate">
+          <p class="pb-6 break-word ">
             {{ post.description }}
           </p>
         </div>
